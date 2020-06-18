@@ -32,7 +32,7 @@
 
   The following image demonstrates the application functionality:
 
-  ![Gif Showing Application Demo!](public/assets/budget_tracker.gif)
+  ![Gif Showing Application Demo!](/public/assets/budget_tracker.gif)
 
   ## Technologies
 
