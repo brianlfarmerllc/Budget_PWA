@@ -1,4 +1,5 @@
 // requireing packages
+require('dotenv').config()
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
@@ -15,7 +16,7 @@ app.use(express.json());
 // creating static access to public folder
 app.use(express.static("public"));
 // connecting to mongo locally and with heroku
-mongoose.connect(process.env.MONGODB_URI ||"mongodb://localhost/budget", {
+mongoose.connect(process.env.MONGODB_URI ||process.env.Atlas_Connect, {
   useNewUrlParser: true,
   useFindAndModify: false
 });
